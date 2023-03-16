@@ -1,0 +1,113 @@
+/* Write your CSS code here */
+.login-form-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form-container {
+  width: 90%;
+  max-width: 999px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 999px) {
+  .login-form-container {
+    flex-direction: column;
+    height: 70vh;
+  }
+}
+
+.login-form-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width: 999px) {
+  .login-form-image-container {
+    width: 60%;
+  }
+}
+
+.mobile-logo-image {
+  width: 300px;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.desktop-logo-image {
+  display: none;
+}
+
+@media (min-width: 999px) {
+  .mobile-logo-image {
+    display: none;
+  }
+
+  .desktop-logo-image {
+    display: flex;
+    width: 250px;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 999px) {
+  .form-container {
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    padding: 50px 30px 50px 30px;
+    border-radius: 10px;
+    margin-left: 50px;
+  }
+}
+
+.login-button {
+  background-color: #0b69ff;
+  height: 45px;
+  border-radius: 6px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.label {
+  font: 500 12px 'Roboto';
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.user-input {
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #d7dfe9;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.error-message {
+  font: 400 16px 'Roboto';
+  color: #ff0b37;
+  margin: 0px;
+}
